@@ -1,0 +1,34 @@
+
+v1.2
+----
+- added missing "textdomain" line to localization template
+- added Spanish translation
+- fixed status not retrieving custom nametag text when hidden
+- compatible with mods providing "invisibility":
+	- invisibility ( https://content.minetest.net/packages/TenPlus1/invisibility/ )
+		- won't try change nametag while invisible
+	- invisible ( https://content.minetest.net/packages/AiTechEye/invisible/ )
+		- won't unhide nametag if hidden before sneak
+
+
+v1.1
+----
+- uses Minetest's built-in localization engine
+- updated for Minetest 5.0 API
+- fixed clearing text when "hidename.use_alpha" not enabled
+- custom nametag text will be restored if set instead of player name
+	- no longer requires setting nametag text on login
+
+
+v1.0
+----
+- added setting "hidename.use_alpha" to use nametag alpha level instead of clearing text
+- set player nametag text to player name on login
+- chat commands are not translated
+
+
+v0.2
+----
+- added "nametag" chat command
+- show nametag status when "/nametag" or "/nametag status" invoked
+- added localization support using intllib
